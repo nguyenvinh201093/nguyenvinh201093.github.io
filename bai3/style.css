@@ -1,0 +1,148 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	box-sizing:bolder-box;
+}
+body{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px; 
+	line-height:1.4;
+	width:1000px;
+	margin:0px auto;
+}
+#head .banner {
+	height:200px;
+}
+#head .banner  img{
+	width:1000px;
+	height:200px;
+	background-color:red;
+	
+}
+#head .menu-inline{
+	height:50px;
+	background:#1F568B;
+}
+.menu-inline ul {
+	background: #1F568B;
+	list-style-type:none;
+	text-align:center;
+	position:relative;
+}
+.menu-inline  ul > a:first-child {
+	position:absolute;
+	top:-98px;
+	left:109px;
+}
+.menu-inline ul li{
+	display:inline-block;
+	height:50px;
+	width:120px;
+	line-height:50px;
+	color:#f1f1f1;
+	position:relative;
+}
+.menu-inline ul li a{
+	color: #fff;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+}
+.menu-inline ul li a:hover{
+	background:#F1F1F1;
+	color:#333;
+}
+.menu-inline ul li >.sub-menu{
+	display:none;
+	position:absolute;
+}
+.menu-inline ul li:hover .sub-menu{
+	display:block;
+}
+ /* .menu-inline ul li > .sub-menu{
+	display:none;
+}
+.menu-inline ul  li:hover .sub-menu{
+	display:block;
+} */ 
+#content{
+	height:650px;
+	background-color:yellow;
+}
+#content .left{
+	float:left;
+}
+#content .left .menu{
+	width:150px;
+	height:650px; 
+	background-color:#CC9933;
+}
+.menu-dropdow{
+	height:50px;
+	background:#CC9933;
+	line-height:40px;
+	padding:0 2em;
+	font-weight:bold;
+}
+.menu ul{
+	background:#1F568B;
+	width:150px;
+	padding:0px;
+	list-style-type:none;
+	text-align:left;
+}
+.menu ul li{
+	color:#f1f1f1;
+	width:auto;
+	height:40px;
+	line-height:40px;
+	padding:0 2em;
+	border-bottom:1px solid #e8e8e8;
+	position:relative;
+}
+.menu ul li a{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	display:block;
+}
+.menu li:hover{
+	background:#F1F1F1;
+	color:black;
+}
+/* .menu .sub-menu{
+	width:185px;
+	position:absolute;
+	left:150px;
+	top:0;
+	display:none;
+}
+.menu li:hover .sub-menu{
+	display:block;
+} */
+#content .import{
+	width:850px;
+	height:650px; 
+	background-color:#999999;
+	float:left;
+}
+#content .import .image{
+	float:left;
+	
+}
+#content .import .image  img{
+	padding:35px 10px 10px 20px;
+	width:245px;
+	height:250px;
+}
+#footer{
+	height:100px;
+	background-color:#1F568B;
+	text-align:center;
+}
+#chat {
+	position:fixed;
+	right:20px;
+	bottom:20px;
+}
