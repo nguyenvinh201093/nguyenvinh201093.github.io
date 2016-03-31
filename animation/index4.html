@@ -1,0 +1,100 @@
+<html>
+	<style>
+		html,body{margin:0px;padding:0px;}
+		*{
+			box-sizing:border-box;
+		}
+		
+		body{
+			font-family:"Open Sans",arial,sans-serif;
+			background:#FFFFFF;
+		}
+		#wrap{
+			margin:auto;
+			width:1000px;
+			height:450px;
+		}
+		h1{
+			letter-spacing:0.2em;
+			margin:25px 0;
+			font-size:3em;
+			color:red;
+			text-align:center;
+			line-height:1.5em;<!-- tăng giảm khoảng cách giữa các dòng (thuộc tính này làm cho color và text-center không hiển thị được)-->
+			text-transform:uppercase; --><!-- tất cả các chữ trong văn bản có dấu gạch chân -->
+			
+			
+		}				
+		.thumb{
+			float:left;
+			<!-- overflow:hidden; -->
+		}
+		@keyframes title{
+			0%{	right:0px;}
+			25%{right:100px;}
+			50%{right:300px;}
+			75%{right:600px;}
+			100%{visibility:hidden;opacity:0;transition:visibility 0s 2s,opacity 10s linear;}
+		}
+		.thumb img{
+			cursor:pointer;
+			width:300px;
+			height:200px;
+			padding:10px 10px;
+			border:2px ridge white;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			<!-- transition:all 0.5s linear;<!-- %all tat ca -->
+			visibility: visible;
+			opacity: 1;
+			transition: opacity 2s linear;
+		}
+		.thumb:hover img{
+			<!-- transform:scale(1.2);<!-- phong to anh len 1.2 lan -->
+			<!-- opacity:0.5;	  --><!-- do mo -->
+			<!-- transform:translate(0,-5px);<!-- thay doi 5px theo truc y --> 
+			<!-- box-shadow:0px 5px 5px 0px rgba(0,0,0,0.2);<!-- bong cua anh --> -->
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 0s 2s, opacity 2s linear;
+		}
+		.footer{
+			float:right;
+			padding-right:50px;
+		}
+		p{
+			position: relative;
+			animation-name:title;
+			animation:title 3s ease infinite;
+		}
+	</style>
+	<head>
+		<meta charset="utf8">
+	</head>
+	<body>
+	<h1>BÁNH TRUNG THU</h1>
+		<div id="wrap">
+		<div class="col">
+		<div class="thumb">
+		<img class="image img1" src="http://kinhnghiemsong.org/wp-content/uploads/2015/09/chon-banh-trung-thu-thom-ngon-3.jpg"></div></div>
+		<div class="col">
+		<div class="thumb" >
+		<img class="image img2" src="http://review.websosanh.net/Images/Uploaded/Share/2015/07/21/6aebanh-trung-thu-f.jpg"></div>	</div>
+		<div class="col">
+		<div class="thumb" >
+		<img class="image img4" src="http://phunutoday.vn/upload_images/images/2015/08/15/luu-y-khi-an-banh-trung-thu.jpg"></div>	</div>
+		<div class="col">
+		<div class="thumb" >
+		<img class="image img5"src="http://laodong.com.vn/Uploaded/hoangthudung/2015_09_09/2_XLTR.jpg"></div>	</div>
+		<div class="col">
+		<div class="thumb">
+		<img class="image img6" src="http://banhtrungthu.me/wp-content/uploads/2015/08/1-4-906x604.jpg"></div></div>
+		<div class="col">
+		<div class="thumb">
+		<img class="image img6" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxRLvz5G9ubqt0uR04L4XDk9uNpfml6xCnm24Zqgi9GoNNL1Te"></div></div>
+		</div>
+		<div class="footer">
+			<p>Created by Nguyen Vinh</p>
+		</div>
+		</body>
+</html>
